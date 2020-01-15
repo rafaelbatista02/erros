@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block body %}
+{{msg}}
+<h1>Login</h1>
+< method="POST" action="/login">
+  <input type="email" name="email" placeholder="E-mail">
+  <input type="submit" value="Consultar">
+</>
+{% endblock %}

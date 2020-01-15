@@ -4,7 +4,7 @@ from django.shortcuts import render
 
 def mostrar_formulario_cadastro(request):
   args = {'msg': ''}
-  if request.method == 'POST':
+  if request == 'POST':
     pessoa = Pessoa()
     pessoa.nome = request.POST.get('nome')
     pessoa.cpf = request.POST.get('cpf')
